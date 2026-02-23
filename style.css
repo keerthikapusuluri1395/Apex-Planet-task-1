@@ -130,3 +130,82 @@ footer {
 .contact-form button:hover {
     background-color: #ff4fa3;
 }
+
+/* Education Table Styling */
+
+.edu-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff8fc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.15);
+}
+
+.edu-table th {
+    background-color: #ff69b4;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.edu-table td {
+    padding: 15px;
+    border-bottom: 1px solid #f2c6da;
+}
+
+.edu-table tr:last-child td {
+    border-bottom: none;
+}
+
+.edu-table tr:hover {
+    background-color: #ffeaf4;
+}
+
+/* Smooth Fade Animation */
+
+section {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edu-table {
+        width: 100%;
+    }
+
+}

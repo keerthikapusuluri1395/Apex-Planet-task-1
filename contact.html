@@ -20,24 +20,35 @@
     <a href="education.html">Education</a>
     <a href="contact.html">Contact</a>
 </nav>
+    <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === '1') {
+        alert("Message Sent Successfully!");
+    }
+</script>
+    <form action="contact.php" method="POST">
 
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Message:</label><br>
+    <textarea name="message" required></textarea><br><br>
+
+    <button type="submit">Send</button>
+
+</form>
 <section>
     <h2>Contact Me</h2>
 
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
 
-        <input type="email" placeholder="Your Email" required>
-
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
 </section>
 
 <footer>
     <p>© 2026 Keerthika P | ApexPlanet Internship</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
